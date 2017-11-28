@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/minu garg.unity
+    guid: 5b7c7a2cf1290c94f835fbb14ed21633
+  - enabled: 1
+    path: Assets/Game scene.unity
+    guid: 806dc72b623b70b4a9124a2e2dccba90
