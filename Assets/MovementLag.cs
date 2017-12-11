@@ -73,14 +73,12 @@ public class MovementLag : MonoBehaviour
         {
             int prev_index = current_index - intoxication + SIZE;
             prev_index %= SIZE;
-            //Debug.Log(current_index + "  " + prev_index);
-            //parent.transform.rotation = Quaternion.Inverse(prev_parent_rotations[prev_index]);
-            //parent.transform.position -= prev_parent_positions[prev_index];
 
-            Quaternion currRot = head.transform.rotation;
+            Quaternion currRot = rotation;
+            // currRot = prev_head_rotations[prev_index] * Quaternion.Inverse(currRot);
+            // parent.transform.rotation = currRot * parent.transform.rotation;
             Quaternion delta = currRot * Quaternion.Inverse(prev_head_rotations[prev_index]);
-            //currRot = prev_head_rotations[prev_index] * Quaternion.Inverse(currRot * Quaternion.Inverse(prev_head_rotations[prev_index]));
-            parent.transform.rotation = start * Quaternion.Inverse(delta); //(2f * Quaternion.Inverse(delta)) * parent.transform.rotation;
+            parent.transform.rotation = start * Quaternion.Inverse(delta);
         }
 
         prev_head_positions[current_index] = position;
