@@ -29,7 +29,7 @@ public class MainLogic : MonoBehaviour {
             ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             if (turn == Turn.COMPUTER) {
                 turn = Turn.PLAYER;
-                ball.transform.position = new Vector3(-2.0985f, 1.213f, -5f);//new Vector3(-2.0985f, 1.213f, -6.7755f);
+                ball.transform.position = new Vector3(-2.0985f, 1.213f, -6.7755f); //new Vector3(-2.0985f, 1.213f, -5f);
             } else
             {
                 turn = Turn.COMPUTER;
