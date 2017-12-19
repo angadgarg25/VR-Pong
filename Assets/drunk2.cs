@@ -15,8 +15,6 @@ public class drunk2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.R)) {
-            MotionBlur.blurAmount += 0.1f;
-        }
+        MotionBlur.blurAmount = MainLogic.computer_points * .1f;
     }
 }
