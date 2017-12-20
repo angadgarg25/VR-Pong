@@ -44,11 +44,11 @@ public class MainLogic : MonoBehaviour {
 
         if (player_points == 10) {
             // Go to menu / win screen
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
         } else if (computer_points == 10)
         {
             // Go to menu / lose screen
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
 	}
 }
