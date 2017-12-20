@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainLogic : MonoBehaviour {
 
@@ -43,9 +44,11 @@ public class MainLogic : MonoBehaviour {
 
         if (player_points == 10) {
             // Go to menu / win screen
+            SceneManager.LoadScene(0);
         } else if (computer_points == 10)
         {
             // Go to menu / lose screen
+            SceneManager.LoadScene(0);
         }
 	}
 }
